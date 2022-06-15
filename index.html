@@ -5,22 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Home | Curso practivo Javascript</title>
 </head>
 
 <body>
-    <header>
-        <h1>Talleres Del Curso</h1>
-        <p>Esta pagina fue desarrollada por juan jose ospina</p>
-    </header>
+    <div class="contenedor">
 
-    <section>
-        <nav>
-            <ol>
-                <li><a href="./figuras.html"> ir a figuras</a></li>
-            </ol>
-        </nav>
-    </section>
+        <div class="header">
+            <h1 class="titulo-header"> Calcula las diferentes medidas de las figuras geometricas </h1>
+            <p class="parrafo-header">En esta pagina podras calcular las diferentes medidas de tus fuguras</p>
+        </div>
+        <div class="cont parte1">
+            <h2>Definiciones de las figuras</h2>
+            <div class="contenedor-parte1">
+                <div class="Cuadrado">
+                    <h4>Cuadrado</h4>
+                    <p>Un cuadrado es entonces un polígono regular. Esto quiere decir que todos sus lados son idénticos, y además todos sus ángulos interiores miden lo mismo (en este caso, 90º). </br> Como ya mencionamos, el cuadrado es una categoría de paralelogramo que, a su vez, es un tipo de cuadrilátero donde los lados opuestos son paralelos entre sí (no se cruzan aunque sean prolongados). Sin embargo, un paralelogramo no necesariamente tiene todos sus lados iguales, como es el caso del rectángulo, donde solo los lados opuestos tienen la misma longitud.
+
+                        Otro caso de paralelogramo es el rombo, donde todos los lados tienen la misma longitud, pero solo un par de ángulos son congruentes (miden lo mismo).</p>
+                        <div class="img-cuadrado">!!!!!!!!!!!aca va cuadrado!!!!!!!!!!!!!!</div>
+                </div>
+                <div class="Triangulo">
+                    <h4>Triangulo</h4>
+                    <p>
+                        El triángulo es una figura geométrica muy importante y base de otros polígonos. Así, cualquier polígono con más de tres lados (como el cuadrado) puede dividirse en distintos triángulos cuando se trazan sus diagonales, como vemos en la figura de abajo. Vale recordar que la diagonal es aquel segmento que une un vértice de la figura geométrica con el vértice del lado opuesto.
+
+                        Cabe señalar además que un polígono es una figura geométrica bidimensional que se forma de la unión de distintos puntos (que no formen parte de la misma línea) mediante segmentos de recta.
+                    </p>
+                </div>
+                <div class="Circulo">
+                    <h4>Circulo</h4>
+                    <p>
+                        El círculo es una figura geométrica delimitada por una circunferencia, por lo tanto, la circunferencia es la línea curva que forma el límite de la figura y el círculo es el área que contiene la circunferencia.
+                        Para los problemas del círculo es necesario conocer el valor de pi, ya que se emplea en las fórmulas. Su uso es muy común y es posible encontrar en las calculadoras representado con el símbolo “π” que es igual a 3.141592…
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="cont parte2">
+            <h4>Para poner el link para hacer el ejercicio</h4>
+            <a href="./figuras.html">Calcular</a>
+        </div>
+        <div class="cont parte3">
+            <h4>Contacto</h4>
+            <a href="mailto:juan.jose.ospina@hotmail.com">Contacto Email</a>
+           <!--  <img src="https://brandlogos.net/wp-content/uploads/2016/06/linkedin-logo-512x512.png" alt="linkedin">
+            <img src="data:image/png;base64,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" alt="github">
+         --></div>
+
+
+
+    </div>
+
+
 </body>
 
 </html>
