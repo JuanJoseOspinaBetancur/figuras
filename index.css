@@ -8,8 +8,8 @@
 
     background-color: blue;
     display: grid;
-    grid-template-columns: repeat(4, minmax(400px, 1fr));
-    grid-template-rows: repeat(4, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     place-content: center;
     grid-template-areas:
         "p1 p1 p1 p1"
@@ -27,7 +27,7 @@
     grid-area: p1;
     text-align: center;
     flex-direction: column;
-font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .header p {
