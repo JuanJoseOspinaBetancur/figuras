@@ -1,0 +1,78 @@
+ body {
+     margin: 10;
+     background: papayawhip;
+ }
+
+ #h1titulo {
+     font-size: 50px;
+     font-family: 'Courier New', Courier, monospace;
+ }
+
+ #parrafoTitulo {
+     font-family: 'Courier New', Courier, monospace;
+ }
+
+ #contenedorTitulo {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+ }
+
+ #contenedor {
+
+     width: 100%;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     place-items: center;
+ }
+
+ #contenedor>div {
+     justify-items: center;
+     padding: 20px;
+     align-items: center;
+     justify-content: space-evenly;
+     box-sizing: border-box;
+     border: 1px solid black;
+     margin: 10px;
+     border-radius: 20px;
+     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.37);
+     background: rgb(255, 255, 255);
+     width: 400px;
+ }
+
+ button {
+     background: rgba(128, 128, 128, 0.26);
+     width: 150px;
+     height: 30px;
+     border-radius: 10px;
+ }
+
+
+
+
+ @media (max-width:800px) {
+     #contenedor {
+         display: flex;
+         flex-direction: column;
+
+     }
+
+     #contenedorTitulo p {
+         display: none;
+     }
+
+     #contenedorTitulo {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+     }
+ }
+
+
+ input[type=number]::-webkit-outer-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+ }

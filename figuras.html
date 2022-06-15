@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>figuras geometricas | Curso practico de JS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <a href="./index.html">Retroceder</a>
+    <header id="contenedorTitulo">
+        <h1 id="h1titulo">Figuras Geometricas</h1>
+        <p id="parrafoTitulo">Con este programa podras encontrar las diferentes medidas a las figuras geometricas</p>
+    </header>
+
+    <div id="contenedor">
+
+        <div id="cuadrado">
+            <h1 id="tituloCuadrado">cuadrado</h1>
+            <form id="formularioCuadrado">
+                <label id="labelEntradaCuadrado" for="entradaCuadrado">Escribe cuanto mide cada lado de te cuadrado:
+                </label>
+                <input id="entradaCuadrado" placeholder="Ingrese el dato" type="number" />
+                <h1 id="ingresarCuadrado"></h1>
+                <button id="calcularPerimetro" type="button" onclick="calcularPerimetroCuadrado()">Calcular el
+                    perimetro</button>
+                <button id="calcularArea" type="button" onclick="calcularAreaCuadrado()">Calcular el area</button>
+            </form>
+        </div>
+
+        <div id="triangulo">
+            <h1 id="tituloTriangulo">triangulo</h1>
+
+            <label id="labelLadoTriangulo1" for="ladoTringulo1">ingrese el ladoTringulo1</label>
+            <input id="ladoTringulo1" placeholder="ladoTringulo1" type="number">
+
+            <label id="labelLadoTriangulo2" for="ladoTringulo2">ingrese el ladoTringulo2</label>
+            <input id="ladoTringulo2" placeholder="ladoTringulo2" type="number">
+
+            <label id="labelBaseTriangulo" for="baseTringulo">ingrese el baseTringulo</label>
+            <input id="baseTringulo" placeholder="baseTringulo" type="number">
+
+            <label id="labelAlturaTriangulo" for="alturaTringulo">ingrese el alturaTringulo</label>
+            <input id="alturaTringulo" placeholder="alturaTringulo" type="number">
+            <h1 id="ingresarTriangulo"></h1>
+            <button id="buttonPerimetroTriangulo" type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
+            <button id="buttonAreaTriangulo" type="button" onclick="calcularAreaTriangulo()">Calcular el Area</button>
+
+        </div>
+
+        <div id="circulo">
+            <h1 id="tituloCirculo">circulo</h1>
+            <label id="labelAreaCirculo" for="areaCirculo">ingrese el area circulo</label>
+            <input id="areaCirculo" type="number" placeholder="ingrese el area">
+            <h1 id="ponerCirculo"></h1>
+
+            <button id="buttonDiametroCirculo" type="button" onclick="calculardiametroCirculo()">Calcular Diametro</button>
+            <button id="buttonPerimetroCirculo" type="button" onclick="calcularperimetroCirculo()">Calcular perimetro</button>
+            <button id="buttonAreaCirculo" type="button" onclick="calcularareaCirculo()">Calcular area</button>
+        </div>
+
+        <div id="trianguloIsosceles">
+            <h1 id="tituloTrianguloisos">triángulo isósceles</h1>
+
+            <label id="LabelLado1Trianguloisos" for="lado1">ingrese el lado1</label>
+            <input id="lado1" placeholder="lado1" type="number">
+
+            <label id="LabelLado2Trianguloisos" for="lado2">lado2</label>
+            <input id="lado2" placeholder="lado2" type="number">
+
+            <label id="LabelBaseTrianguloisos" for="base">base</label>
+            <input id="base" placeholder="base" type="number">
+
+            <h1 id="ingresaralturaTI"></h1>
+            <button id="buttonTrianguloisos" onclick="funcionTriánguloIsósceles()" type="button">Calcular altura</button>
+        </div>
+
+    </div>
+
+
+    <script src="./figuras.js"></script>
+</body>
+
+</html>
